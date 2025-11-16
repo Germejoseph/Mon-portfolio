@@ -1,0 +1,377 @@
+/* Reset basique */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Couleurs principales */
+:root {
+--primary-color: #29d9c2;
+--dark-bg: blue;
+--light-bg: #f8f9fc;
+--text-dark: #222;
+--text-light: #eee;
+--btn-bg: var(--primary-color);
+--btn-hover-bg: #1ab8a7;
+}
+
+body {
+background-color: blanchedalmond;
+color: var(--text-dark);
+line-height: 1.5;
+}
+
+/* Navbar */
+.navbar {
+background-color: brown;
+color: whitesmoke;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 25px;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.logo {
+font-weight: bold;
+font-size: 1.2rem;
+}
+
+.logo .prenom {
+color: whitesmoke;
+}
+
+.nav-links a {
+color: green;
+margin-left: 25px;
+text-decoration: none;
+font-size: 0.9rem;
+transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+color:#666
+}
+
+/* Sections générales */
+.section {
+max-width: 900px;
+margin: 40px auto;
+padding: 20px;
+background-color: white;
+border-radius: 6px;
+}
+
+/* Accueil */
+.accueil {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #fff;
+padding: 40px 30px;
+}
+
+.intro-text h1 {
+font-weight: 500;
+font-size: 1.8rem;
+max-width: 450px;
+margin-bottom: 20px;
+}
+
+.intro-text .prenom {
+color: var(--primary-color);
+}
+
+.intro-image img {
+max-width: 300px;
+}
+
+.btn-primary {
+background-color: var(--btn-bg);
+border: none;
+padding: 10px 18px;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+font-weight: 600;
+transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+background-color: var(--btn-hover-bg);
+}
+
+/* À propos */
+.apropos {
+background-color: #f4f5fa;
+text-align: center;
+}
+
+.apropos h2 {
+color: var(--primary-color);
+margin-bottom: 25px;
+}
+
+.apropos-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.apropos-text {
+width: 60%;
+text-align: left;
+font-size: 0.9rem;
+}
+
+.apropos-text a {
+color: var(--primary-color);
+text-decoration: underline;
+}
+
+.apropos-text p {
+margin-bottom: 10px;
+}
+
+.apropos-image img {
+width: 180px;
+border-radius: 50%;
+border: 2px solid var(--primary-color);
+}
+
+/* Projets */
+.projets h2 {
+text-align: center;
+color: var(--primary-color);
+margin-bottom: 30px;
+}
+
+.projets-list {
+display: flex;
+justify-content: space-around;
+gap: 15px;
+}
+
+.projet-card {
+background-color: #f7f8fc;
+padding: 20px;
+border-radius: 6px;
+width: 28%;
+text-align: center;
+font-size: 0.8rem;
+box-shadow: 0 0 7px rgba(0,0,0,0.05);
+}
+
+.projet-card .tags {
+margin: 15px 0;
+font-size: 0.7rem;
+color: #999;
+}
+
+.btn-secondary {
+background-color: var(--primary-color);
+border: none;
+padding: 7px 15px;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+font-weight: 600;
+font-size: 0.8rem;
+transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+background-color: #1ab8a7;
+}
+
+/* Compétences */
+.competences {
+background-color: #f4f5fa;
+padding: 30px 20px;
+}
+
+.competences h2 {
+text-align: center;
+margin-bottom: 25px;
+}
+
+.competences-list {
+display: flex;
+justify-content: space-around;
+gap: 30px;
+}
+
+.competences-soft, .competences-hard {
+background-color: white;
+padding: 20px;
+border-radius: 6px;
+width: 45%;
+font-size: 0.85rem;
+}
+
+.competences-soft h3, .competences-hard h3 {
+margin-bottom: 20px;
+}
+
+#competences {
+  background-color: #e0f7fa;
+  padding: 40px;
+  text-align: center;
+}
+
+.competences {margin-bottom: 20px;
+}
+
+.barre {
+  width: 80%;
+  height: 20px;
+  background-color: #ccc;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.remplissage {
+height: 100%;
+background-color: #00bcd4;
+border-radius: 10px 0 0 10px;
+}
+
+
+.skill {
+margin-bottom: 15px;
+}
+
+.skill span {
+display: inline-block;
+width: 50%;
+}
+
+.progress {
+display: inline-block;
+
+background-color: #ddd;
+height: 7px;
+border-radius: 3px;
+vertical-align: middle;
+margin-left: 10px;
+}
+        
+.progress-bar {
+height: 7px;
+background-color: var(--primary-color);
+border-radius: 3px;
+}
+              
+/* Contact */
+.contact {
+background-color: magenta;
+color: var(--text-light);
+padding: 30px 40px;
+text-align: center;
+}
+                      
+.contact h2 {
+font-weight: 600;
+}
+                        
+.contact p a {
+color: var(--primary-color);
+text-decoration: none;
+font-weight: 600;
+}
+                              
+.contact form {
+margin-top: 20px;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+}
+                                            
+.contact form input,
+.contact form textarea {
+padding: 10px;
+border: none;
+border-radius: 5px;
+width: 100%;
+max-width: 280px;
+font-size: 1rem;
+}
+                                                        
+.contact form textarea {
+resize: vertical;
+min-height: 100px;
+width: 100%;
+}
+                                                              
+.contact form button {
+width: 100%;
+max-width: 140px;
+background-color: var(--primary-color);
+color: white;
+border: none;
+padding: 10px 0;
+font-weight: 600;
+border-radius: 5px;
+cursor: pointer;
+margin: 0 auto;
+}
+                                                                                  
+.contact form button:hover {
+background-color: #1ab8a7;
+}                                                                                  
+/* Footer */
+footer {
+background-color: #eaeaea;
+text-align: right;
+padding: 10px 20px;
+font-size: 0.8rem;
+color: #666;                                                                                  
+width: 45%;
+margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.accueil {
+flex-direction: column;
+text-align: center;
+}
+
+.intro-text, .intro-image {
+width: 100%;
+margin-bottom: 20px;
+}
+
+.apropos-content {
+flex-direction: column;
+}
+
+.apropos-text, .apropos-image {
+width: 100%;
+}
+
+.projets-list, .competences-list {
+flex-direction: column;
+}
+
+.projet-card, .competences-soft, .competences-hard {
+width: 100%;
+}
+
+.contact form input,
+.contact form textarea {
+max-width: 100%;
+}
+
+.contact form button {
+max-width: 100%;
+}
+}

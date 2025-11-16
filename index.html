@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfolio Fanette</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Barre de Navigation-->
+<nav class="navbar">
+<div class="logo">Germe <span class="prenom">JOSEPH</span></div>
+<div class="nav-links">
+ <a href="#accueil">Accueil</a>
+ <a href="#apropos">À propos</a>
+<a href="#projets">Projets</a>
+<a href="#competences">Compétences</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- Accueil -->
+<section id="accueil" class="section accueil">
+<div class="intro-text">
+<h1>Je suis <span class="prenom">Germe JOSEPH</span>,
+    <p>Certifiée en Informatique Bureautique, Communication, animation et journalisme; avec un fort intérêt pour l'administration des affaires et l'action humanitaire.
+    Je dispose mes compétences au service de la communauté, pour 
+un idéal d’éfficacité.</p> </h1>
+<button class="btn-primary" onclick="scrollToSection('projets')">Voir mes projets</button>
+</div>
+<div class="intro-image">
+<img src="GJ_pro.png" alt="J'ai appris avec DCLIC" />
+</div>
+</section>
+
+<!-- À propos -->
+<section id="apropos" class="section apropos">
+<h2>À propos</h2>
+<div class="apropos-content">
+<div class="apropos-text">
+<p>Je m’appelle <strong>Germe JOSEPH</strong>, passionnée par la création de sites web modernes et interactifs.</p>
+<p>Après avoir bouclé une formation en informatique bureautique, je me suis lancé dans le developpement web, un parcours où des instants de sueur font palpiter mon cœur; chaque jour un nouveau défi et des nuits noires sont passées toutes blanches Parce que ce métier qui vibre mes journée avec dévotion, c'est ma passion.</p>
+<a href="GJ CV.pdf" class="btn-primary" download>Télécharger mon CV</a>
+</div>
+<div class="apropos-image">
+<img src="GerDevJose.png" alt="Ma photo pro" />
+</div>
+</div>
+
+<!-- Projets -->
+<section id="projets" class="section projets">
+<h2>Mes Projets</h2>
+<div class="projets-list">
+<div class="projet-card">
+<p>Un mini-jeu interactif en JavaScript qui utilise des événements DOM.</p>
+<div class="tags">#html, #css, #js</div>
+<button class="btn-secondary">Voir</button>
+</div>
+<div class="projet-card"> 
+<p>Un mini-jeu interactif en JavaScript qui utilise des événements DOM.</p>
+<div class="tags">#html, #css, #js</div>
+<button class="btn-secondary">Voir</button>
+</div>
+<div class="projet-card"> 
+<p>Un mini-jeu interactif en JavaScript qui utilise des événements DOM.</p>
+<div class="tags">#html, #css, #js</div>
+<button class="btn-secondary">Voir</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Compétences-->
+ <section id="competences" class="section competences">
+<h2>Mes Compétences</h2>
+<div class="competences-card">
+<p>HTML</p>
+<div class="barre">
+<div class="remplissage" style="width: 97%;"></div>
+</div>
+</div>
+<div class="competences-card">
+<p>CSS</p>
+<div class="barre">
+<div class="remplissage" style="width: 80%;"></div>
+</div>
+</div>
+</div>
+<div class="competences-card">
+<p>JavaScript</p>
+<div class="barre">
+<div class="remplissage" style="width: 40%;"></div>
+</div>
+</div>
+<div class="competences-card">
+<p>Word</p>
+<div class="barre">
+<div class="remplissage" style="width: 80%;"></div>
+</div>
+</div>
+<div class="competences-card">
+<p>Excel</p>
+<div class="barre">
+<div class="remplissage" style="width: 70%;"></div>
+</div>
+</div>
+<div class="competences-card">
+<p>Canva</p>
+<div class="barre">
+<div class="remplissage" style="width: 75%;"></div>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section contact">
+<h2>Vous avez une <a>idée en tête ?</a></h2>
+<p>N’hésitez pas à <a href="#contact-form">me contacter</a></p>
+
+<form id="contact-form" onsubmit="return validateForm()">
+<input type="text" id="nom" name="nom" placeholder="Votre prénom" required />
+<input type="text" id="prenom" name="prenom" placeholder="Votre nom" required />
+<input type="email" id="email" name="email" placeholder="Votre email" required />
+<textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+<button type="submit" class="btn-primary">Envoyer</button> 
+</form>
+</section>
+
+
+<footer>
+<p>Designed by Germejoseph avec HTML, CSS & JS</p>
+<p class="droits">Tous droits réservés -2025</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
